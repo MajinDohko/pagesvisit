@@ -3,10 +3,8 @@ const paginaVisitas = document.getElementById('contadorVisitas');
 
 let visitas = localStorage.getItem('visitas');
 
-if (visitas === null){
-    visitas = 0;
-}else{
-    visitas = +visitas || 0;
+if (visitas === 0){
+    visitas += 1;
 }
 visitas++;
 
