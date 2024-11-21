@@ -6,7 +6,7 @@ let visitas = localStorage.getItem('visitas');
 if (visitas === null){
     visitas = 0;
 }else{
-    visitas = parseInt(visitas);
+    visitas = +visitas || 0;
 }
 visitas++;
 
