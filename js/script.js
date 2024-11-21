@@ -4,7 +4,7 @@ const paginaVisitas = document.getElementById('contadorVisitas');
 let visitas = localStorage.getItem('visitas');
 
 if (visitas === 0){
-    visitas += 1;
+    visitas += 0;
 }
 visitas++;
 
